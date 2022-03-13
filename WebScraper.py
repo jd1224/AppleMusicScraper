@@ -2,7 +2,17 @@ from bs4 import BeautifulSoup as BS
 from requests import get
 from datetime import timedelta
 import json
-
+"""
+Returns a list of JSON Objects in this format:
+{
+        "title": "At All Cost",
+        "artist": "Money Man",
+        "album": "Paranoia",
+        "duration": "0:02:35",
+        "playlist": "P4",
+        "list_creator": "Taquan Green"
+    },
+"""
 
 def get_song_name(line):
     """get the song name and return it as a string"""
