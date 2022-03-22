@@ -1,3 +1,4 @@
+from turtle import clear
 from bs4 import BeautifulSoup as BS
 from requests import get
 from datetime import timedelta
@@ -103,3 +104,9 @@ def get_song_data(list_link):
 
     json_fomatted_str = json.dumps(songs, indent=4)
     return json_fomatted_str
+
+""" print(get_song_data("https://music.apple.com/\
+us/playlist/a-list-pop/pl.5ee8333dbe944d9f9151e97d92d1ead9")) """
+
+print(get_song_data("https://music.apple.com/\
+us/playlist/p4/pl.u-zPyLmg9F5maoVx"))
